@@ -1,0 +1,258 @@
+.user-profile-container {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.user-profile-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.user-profile-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(225, 184, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+}
+
+.user-profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(225, 184, 0, 0.3);
+}
+
+.user-profile-header h1 {
+    color: #e1b800;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.user-profile-details {
+    color: #fff;
+}
+
+.user-profile-info {
+    margin-bottom: 30px;
+}
+
+.user-profile-info-group {
+    margin-bottom: 20px;
+}
+
+.user-profile-info-group label {
+    display: block;
+    color: #e1b800;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.user-profile-info-group p {
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    border: 1px solid rgba(225, 184, 0, 0.2);
+}
+
+.user-profile-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.user-profile-edit-btn,
+.user-profile-logout-btn {
+    flex-grow: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.user-profile-edit-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #e1b800;
+    border: 1px solid #e1b800;
+}
+
+.user-profile-edit-btn:hover {
+    background-color: rgba(225, 184, 0, 0.2);
+    color: #fff;
+}
+
+.user-profile-logout-btn {
+    background-color: #e1b800;
+    color: #000000;
+}
+
+.user-profile-logout-btn:hover {
+    background-color: #c9a500;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(225, 184, 0, 0.3);
+}
+
+.user-profile-logout-btn:active {
+    transform: translateY(0);
+}
+
+.user-profile-edit-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.user-profile-modal-content {
+    background: rgba(15, 15, 15, 0.9);
+    color: #f0f0f0;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(225, 184, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+
+.user-profile-modal-content h2 {
+    margin-top: 0;
+    color: #e1b800;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(225, 184, 0, 0.2);
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.user-profile-form-group {
+    margin-bottom: 20px;
+}
+
+.user-profile-form-group label {
+    display: block;
+    color: #e1b800;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.user-profile-form-group input {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(225, 184, 0, 0.3);
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.user-profile-form-group input:focus {
+    outline: none;
+    border-color: #e1b800;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.user-profile-modal-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.user-profile-save-btn,
+.user-profile-cancel-btn {
+    flex: 1;
+    padding: 12px 0;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.user-profile-save-btn {
+    background-color: #e1b800;
+    color: #000;
+    border: none;
+}
+
+.user-profile-save-btn:hover {
+    background-color: #c9a500;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(225, 184, 0, 0.3);
+}
+
+.user-profile-cancel-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.user-profile-cancel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .user-profile-content {
+        padding: 20px;
+    }
+
+    .user-profile-card {
+        padding: 20px;
+    }
+
+    .user-profile-header h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-profile-content {
+        padding: 15px;
+    }
+
+    .user-profile-card {
+        padding: 15px;
+    }
+
+    .user-profile-header h1 {
+        font-size: 24px;
+    }
+
+    .user-profile-info-group p {
+        font-size: 14px;
+    }
+}

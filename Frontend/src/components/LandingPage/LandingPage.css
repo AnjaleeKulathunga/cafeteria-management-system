@@ -1,0 +1,86 @@
+.landing-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
+}
+
+.landing-content {
+    padding-top: 80px; /* Account for fixed navbar */
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button.primary {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.cta-button.primary:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    color: #ff6b6b;
+    border: 2px solid #ff6b6b;
+}
+
+.cta-button.secondary:hover {
+    background-color: #ff6b6b;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+} 

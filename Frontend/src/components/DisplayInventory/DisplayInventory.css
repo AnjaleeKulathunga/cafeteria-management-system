@@ -1,0 +1,99 @@
+.display-inventory-container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background: rgba(0, 0, 0, 0.236);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(225, 184, 0, 0.2);
+}
+
+.display-inventory-header {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.display-inventory-header h2 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.display-inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.display-inventory-table thead {
+    background-color: #e1b800;
+}
+
+.display-inventory-table th {
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.display-inventory-table th,
+.display-inventory-table td {
+    padding: 12px 16px;
+    border: 1px solid rgba(225, 184, 0, 0.2);
+    color: #ffffff;
+}
+
+.display-inventory-table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.display-inventory-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.display-inventory-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.display-inventory-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.display-inventory-update-btn {
+    background-color: #e1b800;
+    color: #000000;
+}
+
+.display-inventory-update-btn:hover {
+    background-color: #c9a500;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(225, 184, 0, 0.3);
+}
+
+.display-inventory-delete-btn {
+    background-color: #ff4757;
+    color: #ffffff;
+}
+
+.display-inventory-delete-btn:hover {
+    background-color: #e0404e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+}

@@ -1,0 +1,100 @@
+.update-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.update-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #333;
+}
+
+.update-form .form-group {
+  margin-bottom: 20px;
+}
+
+.update-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+}
+
+.update-form input,
+.update-form textarea,
+.update-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+.update-form input:focus,
+.update-form textarea:focus,
+.update-form select:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.update-form textarea {
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.update-button,
+.cancel-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.update-button {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.update-button:hover {
+  background-color: #357abd;
+}
+
+.cancel-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #c0392b;
+}
+
+.form-group button {
+  padding: 10px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #dcdcdc;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.form-group button:hover {
+  background-color: #bbb;
+}

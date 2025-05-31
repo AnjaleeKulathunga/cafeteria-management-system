@@ -1,0 +1,117 @@
+/* Main container with background image and gradient overlay */
+.admin-container {
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      /* rgba(225, 184, 0, 0.3) */
+      rgba(0,0,0,0.7)
+    ),
+    url('https://i.pinimg.com/736x/50/7b/b4/507bb4352c6cb87ae99ecc83698c80c2.jpg') no-repeat center center/cover;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 50px;
+}
+
+/* Main content */
+.admin-main-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Heading */
+.admin-main-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #e1b800;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Grid layout for cards */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+/* Individual dashboard card */
+.dashboard-card {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #e1b800;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(225, 184, 0, 0.5);
+}
+
+/* Card icon styling */
+.dashboard-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #e1b800;
+}
+
+/* Text content inside card */
+.card-content h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #e1b800;
+}
+
+.card-content p {
+  margin: 0.3rem 0 0;
+  font-size: 1.1rem;
+}
+
+/* Quick Actions Section */
+.quick-actions h3 {
+  margin-top: 5rem;
+  color: #e1b800;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 32px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.action-buttons button {
+  padding: 0.8rem 1.5rem;
+  background-color: #e1b800;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-buttons button:hover {
+  background-color: #cfa700;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 600px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

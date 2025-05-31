@@ -1,0 +1,62 @@
+.newemp-container{
+  padding-top: 80px; /* space for fixed navbar */
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+}
+.newemp-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.newemp-header h3{
+  font-size: 24px;
+  color: #03274a;
+  margin: 0;
+}
+
+.search-add-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.depsearch {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.addbutton {
+  padding: 10px 16px;
+  background-color: #e1b800;
+;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  .search-add-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .depsearch,
+  .addbutton {
+    width: 100%;
+  }
+}

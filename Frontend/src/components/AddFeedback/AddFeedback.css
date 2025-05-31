@@ -1,0 +1,231 @@
+.add-feedback-body {
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://media.istockphoto.com/id/1173579665/vector/seamless-pattern-supermarket-grocery-store-food-drinks-vegetables-fruits-fish-meat-dairy.jpg?s=612x612&w=0&k=20&c=XQQ9oPb6lx4m32iPIrmb1fzugwqr-WRUJo8nTod1D2Q=");
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+  }
+  
+.add-feedback-container {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+.add-feedback-container h1 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+.add-feedback-container p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+.add-feedback-emoji-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+  
+.add-feedback-btn.add-feedback-btn-normal {
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+  }
+  
+.add-feedback-btn.add-feedback-btn-normal:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+  }
+  
+.add-feedback-question {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #444;
+  }
+  
+.add-feedback-textarea {
+    width: 90%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 12px;
+    resize: none;
+    font-size: 15px;
+    transition: border-color 0.3s;
+  }
+  
+.add-feedback-textarea:focus {
+    border-color: #ff7700;
+    outline: none;
+  }
+  
+.add-feedback-radio-btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 15px 0;
+  }
+  
+.add-feedback-one-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+.add-feedback-star-input {
+    display: none;
+  }
+  
+.add-feedback-info-field {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+    align-items: center;
+  }
+  
+.add-feedback-label {
+    position: relative;
+    display: block;
+  }
+  
+.add-feedback-input {
+    width: 650px;
+    padding: 19px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+    font-size: 15px;
+    transition: border-color 0.3s;
+  }
+
+.add-feedback-input[type="text"] {
+    margin-bottom: 10px;
+  }
+  
+.add-feedback-input:focus {
+    border-color: #ff7700;
+    outline: none;
+  }
+  
+.add-feedback-label span {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    color: #999;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  
+.add-feedback-input:focus + span,
+.add-feedback-input:not(:placeholder-shown) + span {
+    top: 5px;
+    left: 10px;
+    font-size: 12px;
+    color: #ff7700;
+    background: #fff;
+    padding: 0 5px;
+  }
+  
+.add-feedback-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+.add-feedback-btn.add-feedback-submit-btn {
+    background-color: #ff7700;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-style: italic;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+.add-feedback-btn.add-feedback-submit-btn:hover {
+    background-color: #ff7700;
+    transform: scale(1.05);
+  }
+
+.add-feedback-star {
+  cursor: pointer;
+  transition: color 200ms;
+ }
+
+.add-feedback-stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 5px; 
+}
+  
+.add-feedback-title {
+  font-family: "https://fonts.google.com/specimen/Playwrite+DK+Loopet";
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.add-feedback-subtitle {
+  font-family: "https://fonts.google.com/specimen/Tagesschrift";
+    font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.add-feedback-rating-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #4b5563;
+}
+
+@media screen and (max-width: 768px) {
+    .add-feedback-container {
+        padding: 20px;
+    }
+
+    .add-feedback-input {
+        width: 100%;
+    }
+
+    .add-feedback-emoji-box {
+        gap: 10px;
+    }
+
+    .add-feedback-btn.add-feedback-btn-normal {
+        font-size: 24px;
+    }
+
+    .add-feedback-title {
+        font-size: 24px;
+    }
+
+    .add-feedback-subtitle {
+        font-size: 14px;
+    }
+}

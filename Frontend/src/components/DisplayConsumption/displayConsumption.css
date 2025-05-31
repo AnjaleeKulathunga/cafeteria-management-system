@@ -1,0 +1,220 @@
+/* body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://media.istockphoto.com/id/1173579665/vector/seamless-pattern-supermarket-grocery-store-food-drinks-vegetables-fruits-fish-meat-dairy.jpg?s=612x612&w=0&k=20&c=XQQ9oPb6lx4m32iPIrmb1fzugwqr-WRUJo8nTod1D2Q=");
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+} */
+
+.consumption-page-container {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+.consumption-header {
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.consumption-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #e1b800;
+    border-radius: 2px;
+}
+
+.consumption-header h1 {
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.consumption-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.consumption-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.consumption-add-btn {
+    background-color: #e1b800;
+    color: #000000;
+}
+
+.consumption-add-btn:hover {
+    background-color: #c9a500;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(225, 184, 0, 0.3);
+}
+
+.consumption-download-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 2px solid #e1b800;
+}
+
+.consumption-download-btn:hover {
+    background-color: #e1b800;
+    color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(225, 184, 0, 0.3);
+}
+
+.consumption-download-btn:disabled {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(225, 184, 0, 0.3);
+    color: rgba(255, 255, 255, 0.3);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.consumption-table-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.236);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(225, 184, 0, 0.2);
+}
+
+.consumption-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.consumption-table thead {
+    background-color: #e1b800;
+}
+
+.consumption-table th {
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 16px;
+}
+
+.consumption-table td {
+    padding: 12px 16px;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(225, 184, 0, 0.2);
+}
+
+.consumption-table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.consumption-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.consumption-row-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.consumption-update-btn,
+.consumption-delete-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.consumption-update-btn {
+    background-color: #e1b800;
+    color: #000000;
+}
+
+.consumption-update-btn:hover {
+    background-color: #c9a500;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(225, 184, 0, 0.3);
+}
+
+.consumption-delete-btn {
+    background-color: #ff4757;
+    color: #ffffff;
+}
+
+.consumption-delete-btn:hover {
+    background-color: #e0404e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .consumption-header h1 {
+        font-size: 36px;
+    }
+
+    .consumption-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .consumption-btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .consumption-table-container {
+        padding: 10px;
+    }
+
+    .consumption-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,165 @@
+Container setup
+.dept-container {
+  padding-top: 80px; /* space for fixed navbar */
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Header styling */
+.dept-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dept-header h3 {
+  font-size: 24px;
+  color: #03274a;
+  margin-bottom: 30px;
+}
+
+/* Card-style table wrapper */
+.tabledep {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search & Add button row */
+.search-add-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+/* Search input */
+.depsearch {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Add button */
+.addbutton {
+  padding: 10px 16px;
+  background-color: #e1b800;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-right: 20px; 
+}
+.tabledep {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; /* centers the table */
+}
+
+/* Salary table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  font-size: 17px; 
+}
+
+th,
+td {
+  text-align: left;
+  padding: 16px 20px; /* increased padding */
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: #03274a;
+}
+
+td.netsalary {
+  background-color: #e8f4fd;
+  color: #0d47a1;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Action buttons */
+.tabledep button {
+  padding: 6px 12px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+.salary-content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.salaryupdate {
+  background-color: #1976d2; /* Update */
+}
+
+.salarydelete{
+  background-color: #d32f2f; /* Delete */
+}
+
+.pdfbutton {
+  margin-left: 10px;
+  padding: 8px 14px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pdfbutton:hover {
+  background-color: #c0392b;
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .search-add-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .depsearch,
+  .addbutton {
+    width: 100%;
+  }
+
+  .tabledep {
+   padding:10px;
+  }
+
+}
+
+  @media (max-width: 600px) {
+  th, td {
+    padding: 12px 14px;
+    font-size: 15px;
+  }
+  }

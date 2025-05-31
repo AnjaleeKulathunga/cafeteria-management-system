@@ -1,0 +1,74 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.3",
+    "@mui/material": "^5.14.5",
+    "@stripe/react-stripe-js": "^2.3.1",
+    "@stripe/stripe-js": "^2.1.6",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.5.0",
+    "chart.js": "^4.4.0",
+    "cross-env": "^7.0.3",
+    "html2canvas": "^1.4.1",
+    "html2pdf.js": "^0.10.1",
+    "i18next": "^22.5.1",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.6.0",
+    "react": "^18.2.0",
+    "react-circular-progressbar": "^2.1.0",
+    "react-data-table-component": "^7.5.4",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-i18next": "^12.3.1",
+    "react-icons": "^4.11.0",
+    "react-router-dom": "^6.15.0",
+    "react-scripts": "5.0.1",
+    "react-to-print": "^2.14.15",
+    "recharts": "^2.8.0",
+    "sass": "^1.66.1",
+    "shebang-regex": "^4.0.0",
+    "socket.io-client": "^4.8.1",
+    "stripe": "^13.6.0",
+    "styled-components": "^6.0.7",
+    "sweetalert2": "^11.7.27",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "typescript": "4.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postinstall": "npm install --no-save shebang-regex"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "resolutions": {
+    "shebang-regex": "^4.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

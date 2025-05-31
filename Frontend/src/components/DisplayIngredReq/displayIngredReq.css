@@ -1,0 +1,215 @@
+.ingredient-request-container {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1920');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+.ingredient-request-content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  border: 1px solid rgba(225, 184, 0, 0.2);
+  width: 100%;
+}
+
+.ingredient-request-title {
+  color: #e1b800;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.ingredient-request-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #e1b800;
+  border-radius: 2px;
+}
+
+.ingredient-request-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 20px 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ingredient-request-table thead tr {
+  background: rgba(225, 184, 0, 0.2);
+  color: #e1b800;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ingredient-request-table th,
+.ingredient-request-table td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(225, 184, 0, 0.2);
+}
+
+.ingredient-request-table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.ingredient-request-table tbody tr:hover {
+  background: rgba(225, 184, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.ingredient-request-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ingredient-request-update-btn {
+  background-color: rgba(225, 184, 0, 0.8);
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ingredient-request-update-btn:hover {
+  background-color: #e1b800;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(225, 184, 0, 0.3);
+}
+
+.ingredient-request-delete-btn {
+  background-color: rgba(220, 53, 69, 0.8);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ingredient-request-delete-btn:hover {
+  background-color: #dc3545;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+}
+
+.ingredient-request-add-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1b800;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ingredient-request-add-btn:hover {
+  background-color: #c9a500;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(225, 184, 0, 0.3);
+}
+
+.ingredient-request-download-btn {
+  background-color: rgba(225, 184, 0, 0.8);
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ingredient-request-download-btn:hover {
+  background-color: #e1b800;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(225, 184, 0, 0.3);
+}
+
+.ingredient-request-download-btn:disabled {
+  background-color: rgba(225, 184, 0, 0.3);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .ingredient-request-container {
+    padding: 1rem;
+  }
+
+  .ingredient-request-content {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .ingredient-request-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .ingredient-request-title {
+    font-size: 2rem;
+  }
+
+  .ingredient-request-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .ingredient-request-update-btn,
+  .ingredient-request-delete-btn {
+    width: 100%;
+    padding: 0.75rem;
+  }
+}

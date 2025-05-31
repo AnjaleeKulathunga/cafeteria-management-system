@@ -1,0 +1,434 @@
+/* AboutMealMate.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.about-mealmate {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+
+.about-mealmate-banner {
+    position: relative;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../Pictures/image_01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin: 0;
+    padding: 60px 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-radius: 0;
+}
+
+.about-mealmate-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255, 255, 255, 0.05)" d="M0,192L48,181.3C96,171,192,149,288,154.7C384,160,480,192,576,202.7C672,213,768,203,864,186.7C960,171,1056,149,1152,154.7C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+  background-size: cover;
+  background-position: bottom;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0.5;
+}
+
+.about-mealmate-banner h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.about-mealmate-banner h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #fff;
+  margin: 10px auto 20px;
+  border-radius: 2px;
+}
+
+.about-mealmate-banner p {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-weight: 300;
+  position: relative;
+}
+
+/* Container Sections */
+.about-mealmate-container {
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 30px;
+}
+
+.about-mealmate-container:nth-child(odd) {
+    background-color: #fff;
+}
+
+.about-mealmate-container:nth-child(even) {
+    background-color: #f5f9f5;
+    flex-direction: row-reverse;
+}
+
+.about-mealmate-text-section {
+    flex: 1;
+    padding: 0 40px;
+}
+
+.about-mealmate-text-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #333;
+    position: relative;
+}
+
+.about-mealmate-text-section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #333;
+    margin-top: 15px;
+    border-radius: 2px;
+}
+
+.about-mealmate-text-section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.about-mealmate-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-mealmate-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-mealmate-image img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Features Section */
+.about-mealmate-features {
+    padding: 30px 20px;
+    background-color: #fff;
+    text-align: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.about-mealmate-features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+}
+
+.about-mealmate-features h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #333;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.about-mealmate-features ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.about-mealmate-features li {
+    background-color: #f9f9f9;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    font-size: 1rem;
+}
+
+.about-mealmate-features li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-mealmate-features li i {
+    color: #4CAF50;
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+/* Join Section */
+.about-mealmate-join {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    position: relative;
+    margin: 40px 0;
+}
+
+.about-mealmate-join::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(76, 175, 80, 0.05)" d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,149.3C672,149,768,171,864,165.3C960,160,1056,128,1152,117.3C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.about-mealmate-join h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    position: relative;
+    z-index: 1;
+}
+
+.about-mealmate-join h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #333;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.about-mealmate-join p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.about-mealmate-join a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.about-mealmate-join a:hover {
+    color: #388E3C;
+    text-decoration: underline;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-mealmate-banner, .about-mealmate-text-section, .about-mealmate-image, .about-mealmate-features, .about-mealmate-join {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@media (max-width: 992px) {
+    .about-mealmate-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-mealmate-container:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .about-mealmate-text-section {
+        padding: 0 20px;
+        text-align: center;
+    }
+   
+    .about-mealmate-banner h1 {
+        font-size: 3rem;
+    }
+
+    .about-mealmate-features ul {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .about-mealmate-banner {
+        padding: 40px 20px;
+    }
+   
+    .about-mealmate-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-mealmate-text-section h2 {
+        font-size: 2rem;
+    }
+   
+    .about-mealmate-text-section p, .about-mealmate-join p {
+        font-size: 1rem;
+    }
+
+    .about-mealmate-features ul {
+        grid-template-columns: 1fr;
+    }
+
+    .about-mealmate-container, .about-mealmate-features, .about-mealmate-join {
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-mealmate-banner h1 {
+        font-size: 2rem;
+    }
+   
+    .about-mealmate-text-section h2 {
+        font-size: 1.8rem;
+    }
+   
+    .about-mealmate-container, .about-mealmate-features, .about-mealmate-join {
+        padding: 15px;
+    }
+}
+
+.about-mealmate-title {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.about-mealmate-highlight {
+    color: #4CAF50;
+}
+
+.about-mealmate-key-features {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    position: relative;
+}
+
+.about-mealmate-feature-text {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-mealmate-feature-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.about-mealmate-feature-text h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #333;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.about-mealmate-feature-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-mealmate-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.about-mealmate-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-mealmate-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.about-mealmate-card p {
+    color: #555;
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.about-mealmate-social-icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.about-mealmate-social-icons img:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .about-mealmate-feature-cards {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .about-mealmate-card {
+        padding: 20px;
+    }
+}

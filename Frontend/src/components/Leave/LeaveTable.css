@@ -1,0 +1,127 @@
+.leave-container {
+  padding-top: 80px; /* space for fixed navbar */
+  padding: 20px;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leave-header {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.leave-header h3 {
+  font-size: 26px;
+  color: #03274a;
+  margin: 0;
+}
+
+.search-add-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.depsearchleave {
+  padding: 10px;
+  width: 280px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* Flex container for chart and table */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Left Section: Smaller Chart */
+.chart-section {
+  width: 30%; /* Decreased width for the pie chart */
+  background: white;
+  padding: 15px; /* Reduced padding */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-right: 20px; /* Space between chart and table */
+  height: 400px; /* Smaller height for the chart */
+}
+
+/* Right Section: Larger Table */
+.table-wrapper {
+  width: 68%; /* Increased width for table */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leave-table th,
+.leave-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.leave-table th {
+  background-color: #03274a;
+  color: white;
+}
+
+.leave-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.approvebtn,
+.rejectbtn {
+  padding: 6px 12px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  width:80px;
+  transition: 0.3s ease;
+  margin: 5px 10px; /* Add margin between the buttons */
+}
+
+.approvebtn {
+  background-color: #28a745;
+}
+
+.approvebtn:hover {
+  background-color: #218838;
+}
+
+.rejectbtn {
+  background-color: #dc3545;
+}
+
+.rejectbtn:hover {
+  background-color: #c82333;
+}
+
+.status-approved {
+  color: #28a745; /* Green for Approved */
+  font-weight: bold;
+}
+
+.status-rejected {
+  color: #dc3545; /* Red for Rejected */
+  font-weight: bold;
+}

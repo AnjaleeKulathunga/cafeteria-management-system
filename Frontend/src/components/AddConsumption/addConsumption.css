@@ -1,0 +1,141 @@
+.add-consumption-container {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+.add-consumption-header {
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.add-consumption-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #e1b800;
+    border-radius: 2px;
+}
+
+.add-consumption-header h1 {
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.add-consumption-form {
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto 60px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.236);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(225, 184, 0, 0.2);
+}
+
+.add-consumption-form-group {
+    margin-bottom: 20px;
+}
+
+.add-consumption-form-group label {
+    display: block;
+    font-size: 15px;
+    color: #e1b800;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.add-consumption-form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid rgba(225, 184, 0, 0.3);
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.add-consumption-form-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.add-consumption-form-input:focus {
+    border-color: #e1b800;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(225, 184, 0, 0.1);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.add-consumption-form-input[type="date"] {
+    color-scheme: dark;
+}
+
+.add-consumption-form-select {
+    composes: add-consumption-form-input;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e1b800' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+.add-consumption-form-textarea {
+    composes: add-consumption-form-input;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.add-consumption-form-button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #e1b800;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.add-consumption-form-button:hover {
+    background-color: #c9a500;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(225, 184, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .add-consumption-header h1 {
+        font-size: 36px;
+    }
+
+    .add-consumption-form {
+        width: 95%;
+        padding: 20px;
+    }
+}

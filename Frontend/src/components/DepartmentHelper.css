@@ -1,0 +1,34 @@
+.depbuttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.depbuttons button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Edit button style */
+.depbuttons button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.depbuttons button:first-child:hover {
+  background-color: #0056b3;
+}
+
+/* Delete button style */
+.depbuttons button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.depbuttons button:last-child:hover {
+  background-color: #a71d2a;
+}

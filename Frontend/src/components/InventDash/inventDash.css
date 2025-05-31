@@ -1,0 +1,352 @@
+/* Global Styles */
+body {
+  margin: 0;
+  background-color: #eaeaea; /* Light ash background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.app-container {
+  position: relative;
+  padding: 2rem;
+  background-image: url('https://media.istockphoto.com/id/1173579665/vector/seamless-pattern-supermarket-grocery-store-food-drinks-vegetables-fruits-fish-meat-dairy.jpg?s=612x612&w=0&k=20&c=XQQ9oPb6lx4m32iPIrmb1fzugwqr-WRUJo8nTod1D2Q=');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  z-index: 0;
+}
+
+/* Dulling overlay */
+.app-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust this to dull more or less */
+  z-index: 0;
+}
+
+/* Make sure all content stays on top of the overlay */
+.inventContainer {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Inventory Container */
+.inventContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #210876;
+}
+
+/* Widget Section */
+.widget-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.widget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.widget:hover {
+  transform: translateY(-3px);
+}
+
+.widget .left .title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #777;
+}
+
+.widget .left .counter {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.widget .left .link {
+  margin-top: 0.5rem;
+  display: inline-block;
+  color: #1e90ff;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.widget .left .link:hover {
+  text-decoration: underline;
+}
+
+.widget .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.widget .right .percentage {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.widget .right .percentage.positive {
+  color: green;
+}
+
+.widget .right .percentage.negative {
+  color: red;
+}
+
+.widget .right .percentage svg {
+  margin-right: 4px;
+}
+
+.widget .right .icon {
+  font-size: 32px;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+/* Featured Section */
+.featured-container {
+  margin-bottom: 2rem;
+}
+
+.featured {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.featured .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featured .top .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #210876;
+}
+
+.featured .bottom {
+  margin-top: 1rem;
+}
+
+.featured .bottom .featured-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.featured .bottom .featured-content .progress-section{
+  margin-top: 100px;
+  margin-right: 100px;
+}
+.featured .bottom .featured-content .bar-chart-section {
+  flex: 1 1 300px;
+}
+
+.featured .bottom .progress-title {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 0.8rem;
+}
+
+.featured .bottom .desc {
+  margin-top: 1.2rem;
+  font-size: 14px;
+  color: #666;
+}
+
+.featured .bottom .button-row {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.featured .bottom .button-row .chart-button {
+  background-color: #210876;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.featured .bottom .button-row .chart-button:hover {
+  background-color: #432fb2;
+}
+
+/* Chart Section */
+.chart-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chart-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.chart-card canvas {
+  max-width: 100%;
+}
+
+.chart-card .chart-button {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #1e90ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.chart-card .chart-button:hover {
+  background-color: #1678d1;
+}
+
+/* List Card Section */
+.list-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.list-card .list-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #210876;
+  margin-bottom: 1rem;
+}
+
+.chat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chat-item .chat-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.5rem;
+  object-fit: contain;
+}
+
+.chat-item .chat-info {
+  flex: 1;
+}
+
+.chat-item .chat-name {
+  font-weight: 600;
+}
+
+.chat-item .chat-contact {
+  font-size: 12px;
+  color: #777;
+}
+
+.chat-item .chat-condition {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 4px;
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.chat-item .chat-condition.operational {
+  background-color: #e0f7e9;
+  color: green;
+}
+
+.chat-item .chat-condition.under-maintenance {
+  background-color: #fff3cd;
+  color: #b8860b;
+}
+
+.chat-item .chat-condition.out-of-order {
+  background-color: #f8d7da;
+  color: red;
+}
+
+.chat-item .chat-options {
+  color: #999;
+  cursor: pointer;
+}
+
+/* Equipment Table */
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list-table th,
+.list-table td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.list-table th {
+  background-color: #f0f0f0;
+  font-weight: 600;
+  color: #555;
+}
+
+.list-table td {
+  border-bottom: 1px solid #eee;
+}
+
+.equipment-condition.low {
+  color: red;
+  font-weight: bold;
+}
+
+.equipment-condition.medium {
+  color: orange;
+  font-weight: bold;
+}
+
+.equipment-condition.high {
+  color: green;
+  font-weight: bold;
+}

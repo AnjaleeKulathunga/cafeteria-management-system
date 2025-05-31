@@ -1,0 +1,26 @@
+.navbar {
+    background-color: #333;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+.home-a logout-button {
+    background-color: #060606;
+    color: #000000;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+/* Add padding to the body to account for fixed navbar */
+body {
+    padding-top: 70px; /* Adjust this value based on your navbar height */
+} 

@@ -1,0 +1,147 @@
+/* Container */
+.fbtr-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(225, 184, 0, 0.2);
+}
+
+/* Heading */
+.fbtr-heading {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+  font-family: cursive;
+}
+
+/* Summary Cards */
+.fbtr-summary-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.fbtr-summary-container .fbtr-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1 1 180px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(225, 184, 0, 0.1);
+}
+
+/* Feedback Table */
+.fbtr-table-container {
+  overflow-x: auto;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(225, 184, 0, 0.2);
+}
+
+.fbtr-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fbtr-table th,
+.fbtr-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(225, 184, 0, 0.1);
+  color: #fff;
+}
+
+.fbtr-table th {
+  background: rgba(0, 0, 0, 0.3);
+  color: #e1b800;
+  font-weight: 600;
+}
+
+.fbtr-table td {
+  color: #fff;
+}
+
+/* Chart Boxes */
+.fbtr-chart-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.fbtr-chart-box {
+  width: 500px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(225, 184, 0, 0.2);
+}
+
+.fbtr-chart-box h4 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #e1b800;
+  font-family: cursive;
+}
+
+.fbtr-download-btn {
+  padding: 10px 20px;
+  background-color: #e1b800;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.fbtr-download-btn:hover {
+  background-color: #c19b00;
+}
+
+@media screen and (max-width: 768px) {
+  .fbtr-container {
+    padding: 10px;
+  }
+  
+  .fbtr-summary-container {
+    flex-direction: column;
+  }
+  
+  .fbtr-chart-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .fbtr-chart-box {
+    width: 100%;
+    max-width: 500px;
+  }
+}

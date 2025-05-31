@@ -1,0 +1,1 @@
+export const sinhalafont = "BASE64_ENCODED_FONT_STRING_HERE";

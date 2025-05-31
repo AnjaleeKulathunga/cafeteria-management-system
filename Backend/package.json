@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Vihanga Anjali Chamodya Sathyani Shanilka",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.12.1",
+    "multer": "^1.4.5-lts.2",
+    "nodemon": "^3.1.10",
+    "socket.io": "^4.8.1",
+    "stripe": "^17.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnjaleeKulathunga/Hostel-Cafeteria-Backend.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/AnjaleeKulathunga/Hostel-Cafeteria-Backend/issues"
+  },
+  "homepage": "https://github.com/AnjaleeKulathunga/Hostel-Cafeteria-Backend#readme",
+  "description": ""
+}
