@@ -23,7 +23,7 @@ function AdminDashboard() {
           <div className="dashboard-card" onClick={() => handleNavigation('/admin-employee-details')}>
             <FaUser className="dashboard-icon" />
             <div className="card-content">
-              <h3>Employees</h3>
+              <h3>Employee</h3>
               <p>Check Employees </p>
             </div>
           </div>
